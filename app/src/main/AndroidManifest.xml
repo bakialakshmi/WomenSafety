@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jayasudha.safetygirl.womensafety" >
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/wsafe"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MenuBar"
+            android:label="@string/title_activity_menu_bar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MenuBar" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Help"
+            android:label="@string/title_activity_help" >
+            <intent-filter>
+                <action android:name="android.intent.action.Help" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ContactsDB"
+            android:label="@string/title_activity_contacts_db" >
+            <intent-filter>
+                <action android:name="android.intent.action.ContactsDB" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MContacts"
+            android:label="@string/title_activity_mcontacts" >
+            <intent-filter>
+                <action android:name="android.intent.action.MContacts" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ViewContactDB"
+            android:label="@string/title_activity_view_contact_db" >
+            <intent-filter>
+                <action android:name="android.intent.action.ViewContactDB" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SendMessage"
+            android:label="@string/title_activity_send_message" >
+            <intent-filter>
+                <action android:name="android.intent.action.SendMessage" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Delete_Contact"
+            android:label="@string/title_activity_delete__contact" >
+            <intent-filter>
+                <action android:name="android.intent.action.Delete_Contact" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Screen"
+            android:label="@string/title_activity_screen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    <receiver android:name=".MyStartReciever"
+            android:label="@string/title_activity_my_start_reciever" >
+            <intent-filter>
+                <action android:name="android.intent.action.SCREEN_OFF" />
+                <action android:name="android.intent.action.SCREEN_ON" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+                <action android:name="android.intent.action.ACTION_SHUTDOWN" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

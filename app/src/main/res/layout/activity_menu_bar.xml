@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@drawable/bgwsafe"
+
+
+
+    >
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="154dp"
+
+        android:gravity="center_horizontal|clip_vertical|left"
+        >
+
+        <ImageView
+            android:layout_width="151dp"
+            android:layout_height="116dp"
+            android:id="@+id/help"
+            android:src="@drawable/help1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Emergency"
+            android:id="@+id/helptext"
+            android:autoText="false"
+            android:textColor="#ff2e2eff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_gravity="center_horizontal"
+        android:weightSum="1"
+        android:gravity="left|right">
+
+        <ImageView
+            android:layout_width="158dp"
+            android:layout_height="134dp"
+            android:id="@+id/contact"
+            android:src="@drawable/manage" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Contacts"
+            android:id="@+id/contacttext"
+            android:textColor="#ff2e2eff" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="181dp"
+        >
+
+        <ImageView
+            android:layout_width="156dp"
+            android:layout_height="131dp"
+            android:id="@+id/follow"
+            android:src="@drawable/follow"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stay connected"
+            android:id="@+id/followtext"
+            android:textColor="#ff2e2eff"/>
+    </LinearLayout>
+
+</LinearLayout>
