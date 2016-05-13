@@ -115,8 +115,8 @@ public class ContactsDB extends ActionBarActivity implements View.OnClickListene
             set2.add(numtext.getText().toString()); */
 
 
-            editor.putString("name_" + size, nametext.getText().toString());
-            editor.putString("number_"+size, numtext.getText().toString());
+            editor.putString("Contact name_" + size, nametext.getText().toString());
+            editor.putString("Contact number_"+size, numtext.getText().toString());
             editor.commit();
            // editor.commit();
             Dialog d = new Dialog(this);
